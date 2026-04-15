@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.tailwindcss.com"></script>
+<title>AttendPro</title>
+</head>
+
+<body class="bg-gray-950 text-white">
+
+<div class="flex min-h-screen">
+
+<!-- SIDEBAR -->
+<div class="w-64 bg-gray-900 p-5 hidden md:block">
+    <h1 class="text-2xl font-bold mb-6">AttendPro</h1>
+
+    <nav class="space-y-3">
+        <a href="/" class="block p-2 bg-gray-800 rounded">Dashboard</a>
+        <a href="/report" class="block p-2 hover:bg-gray-800 rounded">Reports</a>
+        <a href="/export" class="block p-2 hover:bg-gray-800 rounded">Export</a>
+        <a href="/logout" class="block p-2 hover:bg-gray-800 rounded">Logout</a>
+    </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="flex-1 p-6">
+
+    {% block content %}{% endblock %}
+
+</div>
+
+</div>
+
+</body>
+</html>
